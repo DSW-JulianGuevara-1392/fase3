@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Box Model (modelo de caja)</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="encabezado">
+        <section class="page-section boxmodel" id="boxmodel">
+            <div class="container">
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Herramientas de Desarrollo</h2>
+                <p></p>
+                <p>
+                    Si se necesita inspeccionar cada elemento HTML, En la herramienta de
+                    desarrollador de cada navegador hay una pestaña llamada "Estilos" y lo que
+                    hace es mostrar el modelo de caja.<br>
+                    <ul>
+                      <li>El content o contenido es representado por el color azul.</li>
+                      <li>El padding es representado por el color verde claro.</li>
+                      <li>El border es representado por un color amarillo.</li>
+                      <li>El margen es representado por un color naranja.</li>
+                    </ul>
+                    <br>
+                </p>
+                <p>
+                    <img src="assets/imagenes/image005.png" width="50%" height="50%">
+                </p>
+                <p>Al posicionarse en cada elemento HTML de la página web y seleccionarlo,
+                    estos elementos se pintarán de los colores del ejemplo y esto ayuda a
+                    detectar cuanto de padding o margin tiene cada elemento.<br>
+                    <b>Content</b><br>
+                    El contenido de la caja, donde aparecen texto, imágenes, etc.<br>
+                    El área del content (como su nombre lo dice) es donde se encuentra el
+                    “contenido” central a mostrar, es decir, un texto, una imagen, un video,
+                    etc. El contenido siempre es lo que se quiere mostrar al usuario. Esta
+                    área en muchas ocasiones tiene un color o imagen de fondo para hacerla más
+                    atractiva.<br>
+                    Como se puede observar en la imagen, el contenido es el área central de
+                    todo el elemento, de tal forma, que el siguiente elemento que lo rodea es
+                    el padding. El tamaño de esta área se puede modificar con las propiedades
+                    height, width, max-height, max-width, min-height, min-width.<br>
+                    <br>
+                  </p>
+                <p>
+                    <img src="assets/imagenes/image007.png" width="50%" height="50%">
+                </p>
+                <p>Cuando se establece una anchura o una altura en un elemento, esto sólo se
+                    aplica al área de contenido (content) de la caja, no a la caja completa.
+                    El padding y border se añaden a la anchura y la altura para obtener el
+                    tamaño total de la caja.<br>
+                    <br>
+                    <b>Padding</b><br>
+                    Es el área alrededor del contenido. El padding es transparente. El padding
+                    es una separación o espacio interior que existe entre el contenido y el
+                    borde de la caja, el cual se utiliza para dar una apariencia estética más
+                    atractiva y que el contenido no este pegado al borde.<br>
+                    Cabe mencionar que el padding sigue siendo parte de la caja visible, por
+                    lo que, si se tiene una imagen o color de fondo, este se extenderá a
+                    través del padding. El padding está delimitado por el borde.<br>
+                    Se puede usar el mismo valor en toda la caja, por ejemplo, padding: 20px o
+                    se puede dar padding sólo a un lado de la caja, por ejemplo,
+                    padding-right: 10px.<br>
+                    Los valores pueden ser positivos o negativos.<br>
+                    Además, el shorthand padding permite dar un valor diferente a cada lado,
+                    sin necesidad de escribirlos por separado.<br>
+                    <b>Border</b><br>
+                    El borde es la línea que rodea la caja, es la frontera que rodea al
+                    elemento, esta se utiliza para darle una apariencia estética a la caja,
+                    pues permite dibujar una línea de algún color. La línea puede tener los
+                    siguientes estilos:<br>
+                    <br>
+                    <br>
+                  </p>
+                <p>
+                    <img src="assets/imagenes/image008.png" width="50%" height="50%">
+                </p>
+                <p>
+                    Las tres propiedades básicas para crear bordes son:
+                </p>
+                <ul>
+                    <li>border-style: sus valores son solid, dashed y dotted.</li>
+                    <li>border-width: indica al navegador el tamaño del borde, normalmente, se
+                        utiliza el valor en píxeles para esta propiedad, por ejemplo,
+                        border-width: 5px.</li>
+                    <li>border-color: por defecto, el valor utiliza el currentColor del texto.
+                        Sin embargo, es preferible definirlo, aunque no sea necesario. Por
+                        ejemplo, border-color: red.</li>
+                </ul>
+                <p>La mayoría de los desarrolladores web no utilizan estas tres propiedades
+                    por separado. En su lugar, existe un shorthand: border. Con esta
+                    propiedad, se puede escribir sólo border: solid 5px red.<br>
+                    <br>
+                    <b>Margin</b><br>
+                        Es la separación entre una caja y las cajas adyacentes.<br>
+                        El margen es la última área del Box Model y se puede ver como una
+                        separación invisible o transparente que ayuda a separar un elemento de
+                        otro. Cuando definimos un color o imagen de fondo, este no se propaga a
+                        esta sección.<br>
+
+                        
+                        Los márgenes siempre quedan fuera del modelo de caja, por lo que pueden
+                        utilizarse para crear espacio entre los elementos.<br>
+                        Los valores pueden ser positivos o negativos.<br>
+                    <br>
+                    <b>Outline</b><br>
+                        Outline es la línea que rodea a la caja entre el border y el margin. Se
+                        utiliza para dibujar un contorno alrededor de un elemento. Un contorno es 
+                        una línea que se dibuja fuera de los bordes de un elemento. Se puede
+                        utilizar con fines decorativos.<br>
+                        La propiedad outline no pertenece al modelo de caja sin embargo esta
+                        propiedad es una decoración gráfica que hace que los elementos que ganan
+                        el foco, que son por lo general los &lt;input&gt;, se coloren como con una
+                        ligera aura que los rodea.<br>
+
+                        Las propiedades de outline son:</p>
+                        <ul>
+                            <li>outline-width</li>
+                            <li>outline-style</li>
+                            <li>outline-color</li>
+                            <li>outline-offset</li>
+                        </ul>
+                    <p><br>
+                    </p>
+            </div>
+        </section>
+
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="js/scripts.js"></script>
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>
